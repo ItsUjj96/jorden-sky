@@ -1,9 +1,9 @@
 // App.js
 import './App.css';
 import { Link, Route, Routes, useLocation } from 'react-router-dom';
+import GraphComponent from '../components/graph/GraphComponent';
 import MyTable from '../components/table/MyTable';
 import Home from '../components/home/Home';
-
 
 function App() {
   const location = useLocation();
@@ -14,6 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/table" element={<MyTable />} />
+          <Route path="/graph" element={<GraphComponent />} />
         </Routes>
       </div>
 
