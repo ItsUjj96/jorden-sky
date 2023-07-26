@@ -1,0 +1,48 @@
+.table-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #00ff00; 
+  border-radius: 10px;
+  background-color: #222;
+  color: #fff; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.custom-table th,
+.custom-table td {
+  padding: 10px;
+  border: 1px solid #555; 
+  text-align: left;
+}
+
+.custom-table th {
+  background-color: #333;
+  color: #00ff00; 
+}
+
+.custom-table tr:hover {
+  background-color: #333;
+  cursor: pointer;
+}
+
+.expanded-row td {
+  background-color: #444; 
+}
+
+.collapsed-row:hover {
+  cursor: pointer;
+}
